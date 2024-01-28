@@ -11,8 +11,6 @@ def enter_name():
             print(f"Welcome to the wedding '{name_str}'")
             break
 
-    order_drink(drinks)
-
     return name_str
 
 
@@ -33,7 +31,9 @@ def validate_name(name_str):
     else:
         return True
 
-drinks = ["Coke", "Sprite", "Water", "Beer", "Cider", "Wine"]
+
+drinks = ["Coke", "Sprite", "Fanta", "Beer", "Cider", "Wine", "champagne", "Water"]
+
 
 def order_drink(drinks_number):
     """
@@ -50,16 +50,18 @@ def order_drink(drinks_number):
             drinks_number = input("Choose a number:\n")
             drinks_number = int(drinks_number)
             if type(drinks_number) == int:
-                if drinks_number == 10:
+                if drinks_number >= 8:
                     print(f"You picked: '{drinks_number}'.")
-                    print("The number isn't in the list..\n")
+                    print("Sorry that number isnt on the list.")
+                    print("Please pick another number.\n")
                     continue
                 else:
                     print(f"You choose '{drinks[drinks_number]}'\n")
                     break
         except ValueError:
-            print(f"You filled in: '{drinks_number}'.")
-            print("It is not a number.\nPlease try again.\n")
+            print(f"You typed: '{drinks_number}'.")
+            print("That is not a number.")
+            print("Please pick a number on the list.\n")
             continue
         break
 
@@ -72,6 +74,7 @@ def main():
     Runs all program functions
     """
     enter_name()
+    order_drink(drinks)
     
     
 

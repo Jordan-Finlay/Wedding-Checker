@@ -33,9 +33,9 @@ def validate_name(name_str):
     else:
         return True
 
-drinks = ["Coke", "Sprite", "Water", "Beer", "Cider"]
+drinks = ["Coke", "Sprite", "Water", "Beer", "Cider", "Wine"]
 
-def order_drink(drinks):
+def order_drink(drinks_number):
     """
     An input to ask the user which drink they'd like
     """
@@ -50,7 +50,7 @@ def order_drink(drinks):
                 drinks_number = input("Choose a number:\n")
                 drinks_number = int(drinks_number)
                 if type(drinks_number) == int:
-                    if drinks_number >= 4:
+                    if drinks_number == 10:
                         print(f"You picked: '{drinks_number}'.")
                         print("The number isn't in the list..\n")
                         continue
@@ -61,7 +61,7 @@ def order_drink(drinks):
                 print(f"You filled in: '{drinks_number}'.")
                 print("It is not a number.\nPlease try again.\n")
                 continue
-                break
+            break
 
         return drinks_number
 
@@ -72,6 +72,7 @@ def main():
     Runs all program functions
     """
     enter_name()
+    
     
 
 main()

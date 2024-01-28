@@ -32,7 +32,8 @@ def validate_name(name_str):
         return True
 
 
-drinks = ["Coke", "Sprite", "Fanta", "Beer", "Cider", "Wine", "champagne", "Water"]
+drinks = ["Coke", "Sprite", "Fanta", "Beer", "Cider", 
+          "Wine", "champagne", "Water"]
 
 
 def order_drink(drinks_number):
@@ -65,10 +66,13 @@ def order_drink(drinks_number):
             continue
         break
 
-    return drinks_number    
+    return drinks_number
+
 
 meat_dishes = ["Salmon", "Steak", "Chicken", "Lamb", "Beef"]
-vegan_dishes = ["Vegan Alfredo", "Vegan Chicken", "Vegan Stew", "Vegan Meatball Pasta", "Vegan Tofu Stirfry"]
+vegan_dishes = ["Vegan Alfredo", "Vegan Chicken", "Vegan Stew",
+                "Vegan Meatball Pasta", "Vegan Tofu Stirfry"]
+
 
 def order_food():
     """
@@ -85,9 +89,10 @@ def order_food():
             break
         else:
             print(f"you picked '{vegan}'.")
-            print("please pick 'y' or 'n'.\n") 
+            print("please pick 'y' or 'n'.\n")
             continue
         break
+
 
 def vegan_food():
     """
@@ -120,7 +125,7 @@ def vegan_food():
             continue
         break
 
-    return vegan_number  
+    return vegan_number
 
 
 def meat_food():
@@ -154,8 +159,7 @@ def meat_food():
             continue
         break
 
-    return meat_number  
-
+    return meat_number
 
 
 def main():
@@ -165,6 +169,6 @@ def main():
     enter_name()
     order_drink(drinks)
     order_food()
-    
+
 
 main()

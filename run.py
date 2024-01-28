@@ -24,7 +24,11 @@ def validate_name(name_str):
         print("You cannot use numbers")
         print("This is not a valid name.\n")
         return False
-        
+    elif len(name_str) == 1:
+        print(f"You entered : '{name_str}'.")
+        print("Name is too short")
+        print("Please try again with a full name")
+        return False
     else:
         return True
 

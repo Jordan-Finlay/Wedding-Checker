@@ -123,16 +123,38 @@ def vegan_food():
     return vegan_number  
 
 
-
-
-
 def meat_food():
     """
     Meat options
     """
     print("Meatttttt")
     print("Great heres our meat options")
+    list_meat_dishes = enumerate(meat_dishes)
 
+    for meat_dish in list_meat_dishes:
+        print(meat_dish)
+
+    while True:
+        try:
+            meat_number = input("Choose a number:\n")
+            meat_number = int(meat_number)
+            if type(meat_number) == int:
+                if meat_number >= 5:
+                    print(f"You picked: '{meat_number}'.")
+                    print("Sorry that number isnt on the list.")
+                    print("Please pick another number.\n")
+                    continue
+                else:
+                    print(f"You choose '{meat_dishes[meat_number]}'\n")
+                    break
+        except ValueError:
+            print(f"You typed: '{meat_number}'.")
+            print("That is not a number.")
+            print("Please pick a number on the list.\n")
+            continue
+        break
+
+    return meat_number  
 
 
 

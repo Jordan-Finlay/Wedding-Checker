@@ -68,6 +68,44 @@ def order_drink(drinks_number):
     return drinks_number    
 
 
+main_dish = ["Salmon", "Steak", "Chicken", "Lamb", "Beef"]
+
+
+def order_food():
+    """
+    An input to ask the user what main they'd like
+    """
+    print("Are you vegan?")
+
+    while True:
+        vegan = input("Please enter y or n.\n")
+        if vegan == "y":
+            print("Heres our vegan options")
+            vegan_food()
+        elif vegan == "n":
+            print("Great heres our meat options")
+            meat_food()
+            break
+        else:
+            print(f"you picked '{vegan}'.")
+            print("please pick 'y' or 'n'.\n") 
+            continue
+        break
+
+def vegan_food():
+    """
+    Vegan options
+    """
+    print("Vegannnsss")
+
+def meat_food():
+    """
+    Meat options
+    """
+    print("Meatttttt")
+
+
+
 
 def main():
     """
@@ -75,6 +113,7 @@ def main():
     """
     enter_name()
     order_drink(drinks)
+    order_food()
     
     
 

@@ -42,28 +42,28 @@ def order_drink(drinks_number):
     print("Pick What drink would you like")
     list_drinks = enumerate(drinks)
 
-    for drinks in list_drinks:
-        print(drinks)
+    for drink in list_drinks:
+        print(drink)
 
-        while True:
-            try:
-                drinks_number = input("Choose a number:\n")
-                drinks_number = int(drinks_number)
-                if type(drinks_number) == int:
-                    if drinks_number == 10:
-                        print(f"You picked: '{drinks_number}'.")
-                        print("The number isn't in the list..\n")
-                        continue
-                    else:
-                        print(f"You choose '{drinks[drinks_number]}'\n")
-                        break
-            except ValueError:
-                print(f"You filled in: '{drinks_number}'.")
-                print("It is not a number.\nPlease try again.\n")
-                continue
-            break
+    while True:
+        try:
+            drinks_number = input("Choose a number:\n")
+            drinks_number = int(drinks_number)
+            if type(drinks_number) == int:
+                if drinks_number == 10:
+                    print(f"You picked: '{drinks_number}'.")
+                    print("The number isn't in the list..\n")
+                    continue
+                else:
+                    print(f"You choose '{drinks[drinks_number]}'\n")
+                    break
+        except ValueError:
+            print(f"You filled in: '{drinks_number}'.")
+            print("It is not a number.\nPlease try again.\n")
+            continue
+        break
 
-        return drinks_number
+    return drinks_number    
 
 
 

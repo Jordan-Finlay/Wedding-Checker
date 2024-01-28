@@ -67,9 +67,8 @@ def order_drink(drinks_number):
 
     return drinks_number    
 
-
-main_dish = ["Salmon", "Steak", "Chicken", "Lamb", "Beef"]
-
+meat_dishes = ["Salmon", "Steak", "Chicken", "Lamb", "Beef"]
+vegan_dishes = ["Vegan Alfredo", "Vegan Chicken", "Vegan Stew", "Vegan Meatball Pasta", "Vegan Tofu Stirfry"]
 
 def order_food():
     """
@@ -80,10 +79,8 @@ def order_food():
     while True:
         vegan = input("Please enter y or n.\n")
         if vegan == "y":
-            print("Heres our vegan options")
             vegan_food()
         elif vegan == "n":
-            print("Great heres our meat options")
             meat_food()
             break
         else:
@@ -96,13 +93,45 @@ def vegan_food():
     """
     Vegan options
     """
-    print("Vegannnsss")
+    print("vegannss")
+    print("Great heres our vegan options")
+    list_vegan_dishes = enumerate(vegan_dishes)
+
+    for vegan_dish in list_vegan_dishes:
+        print(vegan_dish)
+
+    while True:
+        try:
+            vegan_number = input("Choose a number:\n")
+            vegan_number = int(vegan_number)
+            if type(vegan_number) == int:
+                if vegan_number >= 5:
+                    print(f"You picked: '{vegan_number}'.")
+                    print("Sorry that number isnt on the list.")
+                    print("Please pick another number.\n")
+                    continue
+                else:
+                    print(f"You choose '{vegan_dishes[vegan_number]}'\n")
+                    break
+        except ValueError:
+            print(f"You typed: '{vegan_number}'.")
+            print("That is not a number.")
+            print("Please pick a number on the list.\n")
+            continue
+        break
+
+    return vegan_number  
+
+
+
+
 
 def meat_food():
     """
     Meat options
     """
     print("Meatttttt")
+    print("Great heres our meat options")
 
 
 
@@ -114,7 +143,6 @@ def main():
     enter_name()
     order_drink(drinks)
     order_food()
-    
     
 
 main()

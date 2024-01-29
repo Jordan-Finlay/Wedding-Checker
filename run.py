@@ -184,8 +184,8 @@ def second_round():
         break
 
 
-desserts = ["test", "test2", "test3"]
-vegan_desserts = ["Vtest", "vtest2", "vtest3"]
+desserts = ["Sticky Toffee Pudding", "Chocolate Cake", "Strawberry Cheese Cake"]
+vegan_desserts = ["Coconut Cheesecake", "Vegan Meringue Pie", "Vegan Chocolate brownies"]
 
 
 def order_dessert():

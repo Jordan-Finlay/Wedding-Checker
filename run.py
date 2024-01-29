@@ -272,6 +272,28 @@ def vegan_dessert():
     return dessert_number
 
 
+def song_request():
+    """
+    A function to allow the user to request a song
+    """
+    print("Do you have any song requests?")
+    print("Due to our large number of requests we will try our best to play as many as we can")
+
+    song = input("Choose any song you'd like;\n")
+
+    print("Great song choice!\n")
+
+
+
+def results():
+    """
+    testing
+    """
+    print("To sum up - you have selected;")
+    print(order_drink)
+    print(order_food)
+    print(order_dessert)
+
 
 def main():
     """
@@ -282,5 +304,11 @@ def main():
     order_food()
     second_round()
     order_dessert()
+    song_request()
+    results()
 
 main()
+
+
+
+

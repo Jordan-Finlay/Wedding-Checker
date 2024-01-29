@@ -281,7 +281,7 @@ def song_request():
 
     song = input("Choose any song you'd like;\n")
 
-    print("Great song choice!\n")
+    print(f"You have selected '{song}' Great song choice!\n")
 
 
 

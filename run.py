@@ -293,6 +293,14 @@ def results():
     print(order_drink)
     print(order_food)
     print(order_dessert)
+    print("Great choices!")
+    print("Go into the wedding hall and enjoy the night!")
+    print("We hope you have the best time!")
+    print("Thanks for using our automated system!")
+    print("If you have any idea for improvements")
+    print("Talk to Jordan Finlay in the wedding hall")
+    print("He's the one probably dancing poorly")
+    print("Thanks for coming!")
 
 
 def main():

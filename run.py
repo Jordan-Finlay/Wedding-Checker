@@ -175,14 +175,101 @@ def second_round():
         second_drink = input("Please enter y or n.\n")
         if second_drink == "y":
             order_drink(drinks)
-        elif vegan == "n":
-            order_dessert()
+        elif second_drink == "n":
             break
         else:
             print(f"you picked '{second_drink}'.")
             print("please pick 'y' or 'n'.\n")
             continue
         break
+
+
+desserts = ["test", "test2", "test3"]
+vegan_desserts = ["Vtest", "vtest2", "vtest3"]
+
+
+def order_dessert():
+    """
+    A function that allows the user to order a dessert
+    """
+    print("We shall go onto our dessert menu now")
+    print("Would you like to see the vegan menu?")
+
+    while True:
+        vegan = input("Please enter y or n.\n")
+        if vegan == "y":
+            vegan_dessert()
+        elif vegan == "n":
+            milk_dessert()
+            break
+        else:
+            print(f"you picked '{vegan}'.")
+            print("please pick 'y' or 'n'.\n")
+            continue
+        break
+
+def milk_dessert():
+    """
+    A function for non vegan desserts
+    """
+    list_desserts = enumerate(desserts)
+
+    for dessert in list_desserts:
+        print(dessert)
+
+    while True:
+        try:
+            dessert_number = input("Choose a number:\n")
+            dessert_number = int(dessert_number)
+            if type(dessert_number) == int:
+                if dessert_number >= 3:
+                    print(f"You picked: '{dessert_number}'.")
+                    print("Sorry that number isnt on the list.")
+                    print("Please pick another number.\n")
+                    continue
+                else:
+                    print(f"You choose '{desserts[dessert_number]}'. Great choice!\n")
+                    break
+        except ValueError:
+            print(f"You typed: '{dessert_number}'.")
+            print("That is not a number.")
+            print("Please pick a number on the list.\n")
+            continue
+        break
+
+    return dessert_number
+
+
+def vegan_dessert():
+    """
+    A function for vegan desserts
+    """
+    list_vegan_desserts = enumerate(vegan_desserts)
+
+    for vegan_dessert in list_vegan_desserts:
+        print(vegan_dessert)
+
+    while True:
+        try:
+            dessert_number = input("Choose a number:\n")
+            dessert_number = int(dessert_number)
+            if type(dessert_number) == int:
+                if dessert_number >= 3:
+                    print(f"You picked: '{dessert_number}'.")
+                    print("Sorry that number isnt on the list.")
+                    print("Please pick another number.\n")
+                    continue
+                else:
+                    print(f"You choose '{desserts[dessert_number]}'. Great choice!\n")
+                    break
+        except ValueError:
+            print(f"You typed: '{dessert_number}'.")
+            print("That is not a number.")
+            print("Please pick a number on the list.\n")
+            continue
+        break
+
+    return dessert_number
 
 
 
@@ -194,5 +281,6 @@ def main():
     order_drink(drinks)
     order_food()
     second_round()
+    order_dessert()
 
 main()

@@ -9,6 +9,7 @@ def enter_name():
 
         if validate_name(name_str):
             print(f"Welcome to the wedding '{name_str}'")
+            print("We hope you have a fantastic time!\n")
             break
 
     return name_str
@@ -57,7 +58,7 @@ def order_drink(drinks_number):
                     print("Please pick another number.\n")
                     continue
                 else:
-                    print(f"You choose '{drinks[drinks_number]}'\n")
+                    print(f"You choose '{drinks[drinks_number]}'. Great choice!\n")
                     break
         except ValueError:
             print(f"You typed: '{drinks_number}'.")
@@ -78,7 +79,8 @@ def order_food():
     """
     An input to ask the user what main they'd like
     """
-    print("Are you vegan?")
+    print("We shall go onto our main menu now")
+    print("Would you like to see the vegan menu?")
 
     while True:
         vegan = input("Please enter y or n.\n")
@@ -98,8 +100,7 @@ def vegan_food():
     """
     Vegan options
     """
-    print("vegannss")
-    print("Great heres our vegan options")
+    print("Great! Heres our vegan options;")
     list_vegan_dishes = enumerate(vegan_dishes)
 
     for vegan_dish in list_vegan_dishes:
@@ -116,7 +117,7 @@ def vegan_food():
                     print("Please pick another number.\n")
                     continue
                 else:
-                    print(f"You choose '{vegan_dishes[vegan_number]}'\n")
+                    print(f"You choose '{vegan_dishes[vegan_number]}'. Great choice!\n")
                     break
         except ValueError:
             print(f"You typed: '{vegan_number}'.")
@@ -132,8 +133,7 @@ def meat_food():
     """
     Meat options
     """
-    print("Meatttttt")
-    print("Great heres our meat options")
+    print("Great! Heres our meat options;")
     list_meat_dishes = enumerate(meat_dishes)
 
     for meat_dish in list_meat_dishes:
@@ -150,7 +150,7 @@ def meat_food():
                     print("Please pick another number.\n")
                     continue
                 else:
-                    print(f"You choose '{meat_dishes[meat_number]}'\n")
+                    print(f"You choose '{meat_dishes[meat_number]}'. Great choice!\n")
                     break
         except ValueError:
             print(f"You typed: '{meat_number}'.")
@@ -166,9 +166,10 @@ def second_round():
     """
     A function to let the user order a second drink for dessert
     """
-    print("How about another drink for dessert?\n")
-    print("Would you like to see our drinks menu again?\n")
-    print("Press 'y' for yes or 'n' to move onto the dessert menu")
+    print("How about another drink for dessert?")
+    print("Would you like to see our drinks menu again?")
+    print("Press 'y' to see our drinks menu")
+    print("or 'n' to move onto the dessert menu")
 
     while True:
         second_drink = input("Please enter y or n.\n")

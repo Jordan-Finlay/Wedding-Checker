@@ -33,7 +33,7 @@ def validate_name(name_str):
 
 
 drinks = ["Coke", "Sprite", "Fanta", "Beer", "Cider", 
-          "Wine", "champagne", "Water"]
+          "Wine", "champagne", "Water", "Tea", "Coffee"]
 
 
 def order_drink(drinks_number):
@@ -51,7 +51,7 @@ def order_drink(drinks_number):
             drinks_number = input("Choose a number:\n")
             drinks_number = int(drinks_number)
             if type(drinks_number) == int:
-                if drinks_number >= 8:
+                if drinks_number >= 10:
                     print(f"You picked: '{drinks_number}'.")
                     print("Sorry that number isnt on the list.")
                     print("Please pick another number.\n")
@@ -162,6 +162,29 @@ def meat_food():
     return meat_number
 
 
+def second_round():
+    """
+    A function to let the user order a second drink for dessert
+    """
+    print("How about another drink for dessert?\n")
+    print("Would you like to see our drinks menu again?\n")
+    print("Press 'y' for yes or 'n' to move onto the dessert menu")
+
+    while True:
+        second_drink = input("Please enter y or n.\n")
+        if second_drink == "y":
+            order_drink(drinks)
+        elif vegan == "n":
+            order_dessert()
+            break
+        else:
+            print(f"you picked '{second_drink}'.")
+            print("please pick 'y' or 'n'.\n")
+            continue
+        break
+
+
+
 def main():
     """
     Runs all program functions
@@ -169,6 +192,6 @@ def main():
     enter_name()
     order_drink(drinks)
     order_food()
-
+    second_round()
 
 main()

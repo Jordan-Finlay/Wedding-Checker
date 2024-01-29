@@ -284,14 +284,13 @@ def song_request():
     print(f"You have selected '{song}' Great song choice!\n")
 
 
-
 def results():
     """
-    testing
+    A final review of all the selected options from the user
     """
     print("To sum up - you have selected;")
-    print(order_drink)
-    print(order_food)
+    print(f'{order_drink}')
+    print(f'{order_food}')
     print(order_dessert)
     print("Great choices!")
     print("Go into the wedding hall and enjoy the night!")
@@ -316,7 +315,3 @@ def main():
     results()
 
 main()
-
-
-
-

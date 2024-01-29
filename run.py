@@ -299,7 +299,7 @@ def results():
     print("Thanks for using our automated system!")
     print("If you have any idea for improvements")
     print("Talk to Jordan Finlay in the wedding hall")
-    print("He's the one probably dancing poorly")
+    print("He's in the black suit and probably dancing poorly")
     print("Thanks for coming!")
 
 

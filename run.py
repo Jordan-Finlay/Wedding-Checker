@@ -3,19 +3,23 @@ def enter_name():
     Asks user to input name to check he/she is on the wedding list
     """
     while True:
-        print("Please enter your full name")
+        print("Welcome to the wedding!")
+        print("You are using our automated system")
+        print("We will log you in whilst taking your drinks and food selections")
+        print("First we will ask for your first then second name")
 
-        name_str = input("Enter your full name here.\n")
+        name_str = input("Please enter your first name here;\n")
+        last_str = input("Please enter your last name here;\n")
 
-        if validate_name(name_str):
-            print(f"Welcome to the wedding '{name_str}'")
+        if validate_name(name_str, last_str):
+            print(f"Welcome to the wedding '{name_str} {last_str}'")
             print("We hope you have a fantastic time!\n")
             break
 
     return name_str
 
 
-def validate_name(name_str):
+def validate_name(name_str, last_str):
     """
     This is used to check the name inputted is correct
     """
@@ -24,8 +28,18 @@ def validate_name(name_str):
         print("You cannot use numbers")
         print("This is not a valid name.\n")
         return False
+    elif not last_str.isalpha():
+        print(f"You entered : '{last_str}'.")
+        print("You cannot use numbers")
+        print("This is not a valid name.\n")
+        return False
     elif len(name_str) == 1:
         print(f"You entered : '{name_str}'.")
+        print("Name is too short")
+        print("Please try again with a full name")
+        return False
+    elif len(last_str) == 1:
+        print(f"You entered : '{last_str}'.")
         print("Name is too short")
         print("Please try again with a full name")
         return False
@@ -208,6 +222,7 @@ def order_dessert():
             continue
         break
 
+
 def milk_dessert():
     """
     A function for non vegan desserts
@@ -289,7 +304,7 @@ def results():
     A final review of all the selected options from the user
     """
     print("To sum up - you have selected;")
-    print(f'{order_drink}')
+    
     print(f'{order_food}')
     print(order_dessert)
     print("Great choices!")
@@ -314,4 +329,8 @@ def main():
     song_request()
     results()
 
+
 main()
+
+print(f'{order_food}')
+print(f'{dessert_number}')

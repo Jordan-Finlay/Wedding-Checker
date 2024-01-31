@@ -1,3 +1,18 @@
+user_choices = []
+
+drinks = ["Coke", "Sprite", "Fanta", "Beer", "Cider",
+          "Wine", "champagne", "Water", "Tea", "Coffee"]
+
+desserts = ["Sticky Toffee Pudding",
+            "Chocolate Cake", "Strawberry Cheese Cake"]
+vegan_desserts = ["Coconut Cheesecake",
+                  "Vegan Meringue Pie", "Vegan Chocolate brownies"]
+
+meat_dishes = ["Salmon", "Steak", "Chicken", "Lamb", "Beef"]
+vegan_dishes = ["Vegan Alfredo", "Vegan Chicken", "Vegan Stew",
+                "Vegan Meatball Pasta", "Vegan Tofu Stirfry"]
+
+
 def enter_name():
     """
     Asks user to input name to check he/she is on the wedding list
@@ -5,7 +20,7 @@ def enter_name():
     while True:
         print("Welcome to the wedding!")
         print("You are using our automated system")
-        print("We will log you in whilst taking your drinks and food selections")
+        print("We will log you in whilst taking your drinks and food order")
         print("First we will ask for your first then second name")
 
         name_str = input("Please enter your first name here;\n")
@@ -47,10 +62,6 @@ def validate_name(name_str, last_str):
         return True
 
 
-drinks = ["Coke", "Sprite", "Fanta", "Beer", "Cider", 
-          "Wine", "champagne", "Water", "Tea", "Coffee"]
-
-
 def order_drink(drinks_number):
     """
     An input to ask the user which drink they'd like
@@ -72,8 +83,11 @@ def order_drink(drinks_number):
                     print("Please pick another number.\n")
                     continue
                 else:
-                    print(f"You choose '{drinks[drinks_number]}'. Great choice!\n")
-                    break
+                    print(
+                        f"You choose '{drinks[drinks_number]}'. Great choice!\n")
+                    user_choices.append(drinks[drinks_number])
+                    for item in user_choices:
+                        break
         except ValueError:
             print(f"You typed: '{drinks_number}'.")
             print("That is not a number.")
@@ -82,11 +96,6 @@ def order_drink(drinks_number):
         break
 
     return drinks_number
-
-
-meat_dishes = ["Salmon", "Steak", "Chicken", "Lamb", "Beef"]
-vegan_dishes = ["Vegan Alfredo", "Vegan Chicken", "Vegan Stew",
-                "Vegan Meatball Pasta", "Vegan Tofu Stirfry"]
 
 
 def order_food():
@@ -131,8 +140,11 @@ def vegan_food():
                     print("Please pick another number.\n")
                     continue
                 else:
-                    print(f"You choose '{vegan_dishes[vegan_number]}'. Great choice!\n")
-                    break
+                    print(
+                        f"You choose '{vegan_dishes[vegan_number]}'. Great choice!\n")
+                    user_choices.append(vegan_dishes[vegan_number])
+                    for item in user_choices:
+                        break
         except ValueError:
             print(f"You typed: '{vegan_number}'.")
             print("That is not a number.")
@@ -164,7 +176,8 @@ def meat_food():
                     print("Please pick another number.\n")
                     continue
                 else:
-                    print(f"You choose '{meat_dishes[meat_number]}'. Great choice!\n")
+                    print(
+                        f"You choose '{meat_dishes[meat_number]}'. Great choice!\n")
                     break
         except ValueError:
             print(f"You typed: '{meat_number}'.")
@@ -196,10 +209,6 @@ def second_round():
             print("please pick 'y' or 'n'.\n")
             continue
         break
-
-
-desserts = ["Sticky Toffee Pudding", "Chocolate Cake", "Strawberry Cheese Cake"]
-vegan_desserts = ["Coconut Cheesecake", "Vegan Meringue Pie", "Vegan Chocolate brownies"]
 
 
 def order_dessert():
@@ -243,7 +252,8 @@ def milk_dessert():
                     print("Please pick another number.\n")
                     continue
                 else:
-                    print(f"You choose '{desserts[dessert_number]}'. Great choice!\n")
+                    print(
+                        f"You choose '{desserts[dessert_number]}'. Great choice!\n")
                     break
         except ValueError:
             print(f"You typed: '{dessert_number}'.")
@@ -275,7 +285,8 @@ def vegan_dessert():
                     print("Please pick another number.\n")
                     continue
                 else:
-                    print(f"You choose '{desserts[dessert_number]}'. Great choice!\n")
+                    print(
+                        f"You choose '{desserts[dessert_number]}'. Great choice!\n")
                     break
         except ValueError:
             print(f"You typed: '{dessert_number}'.")
@@ -304,9 +315,7 @@ def results():
     A final review of all the selected options from the user
     """
     print("To sum up - you have selected;")
-    
-    print(f'{order_food}')
-    print(order_dessert)
+    print(user_choices)
     print("Great choices!")
     print("Go into the wedding hall and enjoy the night!")
     print("We hope you have the best time!")
@@ -331,6 +340,3 @@ def main():
 
 
 main()
-
-print(f'{order_food}')
-print(f'{dessert_number}')

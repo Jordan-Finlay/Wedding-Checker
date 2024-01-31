@@ -178,7 +178,9 @@ def meat_food():
                 else:
                     print(
                         f"You choose '{meat_dishes[meat_number]}'. Great choice!\n")
-                    break
+                    user_choices.append(meat_dishes[meat_number])
+                    for item in user_choices:
+                        break
         except ValueError:
             print(f"You typed: '{meat_number}'.")
             print("That is not a number.")
@@ -254,7 +256,9 @@ def milk_dessert():
                 else:
                     print(
                         f"You choose '{desserts[dessert_number]}'. Great choice!\n")
-                    break
+                    user_choices.append(desserts[dessert_number])
+                    for item in user_choices:
+                        break
         except ValueError:
             print(f"You typed: '{dessert_number}'.")
             print("That is not a number.")
@@ -286,8 +290,10 @@ def vegan_dessert():
                     continue
                 else:
                     print(
-                        f"You choose '{desserts[dessert_number]}'. Great choice!\n")
-                    break
+                        f"You choose '{vegan_desserts[dessert_number]}'. Great choice!\n")
+                    user_choices.append(vegan_desserts[dessert_number])
+                    for item in user_choices:
+                        break
         except ValueError:
             print(f"You typed: '{dessert_number}'.")
             print("That is not a number.")

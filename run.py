@@ -47,7 +47,7 @@ def validate_name(name_str, last_str):
     Validate checks for input with no numbers
     """
     if not name_str.isalpha(): #A check to insure no numbers are used
-        print(f"You entered : '{name_str}'.")
+        print(Fore.RED + f"You entered : '{name_str}'.")
         print("You cannot use numbers")
         print("This is not a valid name.\n")
         return False
@@ -64,7 +64,7 @@ def validate_name(name_str, last_str):
     elif len(last_str) == 1: #A check to insure name isn't too short
         print(f"You entered : '{last_str}'.")
         print("Name is too short")
-        print("Please try again with a full name")
+        print("Please try again with a full name" + Style.RESET_ALL)
         return False
     else:
         return True
@@ -87,9 +87,9 @@ def order_drink(drinks_number):
             drinks_number = int(drinks_number)
             if type(drinks_number) == int:
                 if drinks_number >= 10: #A check so the user can't pick outside the list
-                    print(f"You picked: '{drinks_number}'.")
+                    print(Fore.RED + f"You picked: '{drinks_number}'.")
                     print("Sorry that number isnt on the list.")
-                    print("Please pick another number.\n")
+                    print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
                     print(Fore.BLUE +
@@ -98,9 +98,9 @@ def order_drink(drinks_number):
                     for item in user_choices: #Returns the user choice to global
                         break
         except ValueError:
-            print(f"You typed: '{drinks_number}'.")
+            print(Fore.RED + f"You typed: '{drinks_number}'.")
             print("That is not a number.")
-            print("Please pick a number on the list.\n")
+            print("Please pick a number on the list.\n" + Style.RESET_ALL)
             continue
         break
 
@@ -123,7 +123,7 @@ def order_food():
             meat_food() #Runs non vegan menu
             break
         else:
-            print(Fore.BLUE + f"you picked '{vegan}'.")
+            print(Fore.RED + f"you picked '{vegan}'.")
             print("please pick 'y' or 'n'.\n" + Style.RESET_ALL)
             continue
         break
@@ -145,9 +145,9 @@ def vegan_food():
             vegan_number = int(vegan_number)
             if type(vegan_number) == int:
                 if vegan_number >= 5: #A check so the user can't pick outside the list
-                    print(Fore.BLUE + f"You picked: '{vegan_number}'." + Style.RESET_ALL)
+                    print(Fore.RED + f"You picked: '{vegan_number}'.")
                     print("Sorry that number isnt on the list.")
-                    print("Please pick another number.\n")
+                    print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
                     print(Fore.BLUE + 
@@ -156,9 +156,9 @@ def vegan_food():
                     for item in user_choices: #Returns the user choice to global
                         break
         except ValueError:
-            print(f"You typed: '{vegan_number}'.")
+            print(Fore.RED + f"You typed: '{vegan_number}'.")
             print("That is not a number.")
-            print("Please pick a number on the list.\n")
+            print("Please pick a number on the list.\n" + Style.RESET_ALL)
             continue
         break
 
@@ -181,9 +181,9 @@ def meat_food():
             meat_number = int(meat_number)
             if type(meat_number) == int:
                 if meat_number >= 5: #A check so the user can't pick outside the list
-                    print(Fore.BLUE + f"You picked: '{meat_number}'." + Style.RESET_ALL)
+                    print(Fore.RED + f"You picked: '{meat_number}'.")
                     print("Sorry that number isnt on the list.")
-                    print("Please pick another number.\n")
+                    print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
                     print(Fore.BLUE + 
@@ -192,9 +192,9 @@ def meat_food():
                     for item in user_choices: #Returns the user choice to global
                         break
         except ValueError:
-            print(f"You typed: '{meat_number}'.")
+            print(Fore.RED + f"You typed: '{meat_number}'.")
             print("That is not a number.")
-            print("Please pick a number on the list.\n")
+            print("Please pick a number on the list.\n" + Style.RESET_ALL)
             continue
         break
 

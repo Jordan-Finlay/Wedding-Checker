@@ -21,7 +21,7 @@ def enter_name():
         print("Welcome to the wedding!")
         print("You are using our automated system")
         print("We will log you in whilst taking your drinks and food order")
-        print("First we will ask for your first then second name")
+        print("To start we will ask for your first then second name")
 
         name_str = input("Please enter your first name here;\n")
         last_str = input("Please enter your last name here;\n")
@@ -321,12 +321,12 @@ def results():
     A final review of all the selected options from the user
     """
     print("To sum up - you have selected;")
-    print(user_choices)
+    print("[{0}]".format(', '.join(map(str, user_choices))))
     print("Great choices!")
     print("Go into the wedding hall and enjoy the night!")
     print("We hope you have the best time!")
     print("Thanks for using our automated system!")
-    print("If you have any idea for improvements")
+    print("If you have any ideas for improvement")
     print("Talk to Jordan Finlay in the wedding hall")
     print("He's in the black suit and probably dancing poorly")
     print("Thanks for coming!")

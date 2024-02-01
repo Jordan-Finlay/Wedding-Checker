@@ -21,7 +21,7 @@ def enter_name():
         print("Welcome to the wedding!")
         print("You are using our automated system")
         print("We will log you in whilst taking your drinks and food order")
-        print("To start we will ask for your first then second name")
+        print("First we will ask for your first then second name")
 
         name_str = input("Please enter your first name here;\n")
         last_str = input("Please enter your last name here;\n")
@@ -326,7 +326,7 @@ def results():
     print("Go into the wedding hall and enjoy the night!")
     print("We hope you have the best time!")
     print("Thanks for using our automated system!")
-    print("If you have any ideas for improvement")
+    print("If you have any idea for improvements")
     print("Talk to Jordan Finlay in the wedding hall")
     print("He's in the black suit and probably dancing poorly")
     print("Thanks for coming!")

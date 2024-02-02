@@ -15,4 +15,114 @@ After all functions there's a validation check to insure the user response is co
 I originally was going to create a restaurant idea with similar functions that would check the customer in whilst taking their drinks and food order. It was my girlfriends idea for a wedding design as it maybe more fun than a basic restaurant idea, thanks Jo!
 
 
-<div align="center"><img src="assets/readme/wholescreenjpg" alt="An image of my full script"></div>
+<div align="center"><img src="assets/readme/wholescreen.jpg" alt="An image of my full script"></div>
+
+
+# Features
+
+__Existing Features__
+
+- A fully functioning backend python script to check in the user and generate a menu that includes;
+	- Name (first and last)
+	- Drinks menu
+	- Main dish (vegan or non vegan)
+	- An option for a second drink
+	- A dessert menu (again vegan or non vegan)
+	- A song choice
+	- A results print of all options picked
+	- Validation checks after every function
+
+
+<div align="center"><img src="assets/readme/namecheck.jpg" alt="An image of the name check"></div>
+<br />
+
+
+<div align="center"><img src="assets/readme/drinkcheck.jpg" alt="An image of the drinks check"></div>
+<br />
+
+
+<div align="center"><img src="assets/readme/veganoption.jpg" alt="An image of the vegan option"></div>
+
+
+<div align="center"><img src="assets/readme/results.jpg" alt="An image of the results print"></div>
+
+
+<div align="center"><img src="assets/readme/error.jpg" alt="An image of the error print"></div>
+
+
+# Features Left to Implement
+
+I have a few ideas I would love to add to this project such as;
+
+- A random number generator to pick a table number for guests
+- A spreadsheet for data to be sent to and stored
+- On a spreadsheet have the names of all guests and visabily tick them off when they enter their name into the system
+
+
+# Testing
+
+I've tested my Pong game website on multiple browers such as Firefox/Chrome and Microsoft edge. As well as my android phone using "Samsung internet".
+To my current knowledge there are no bugs on any device or internet browser - although I'm still yet to test fully on an ipad/tablet.
+The website is fully adaptable to all devices and screen sizes.
+
+- Firefox
+  - Script works as intended
+
+- Chrome
+  - Script works as intended
+
+- Microsoft edge
+  - Script works as intended
+
+## Mobile testing
+
+- Firefox (mobile)
+  - Script works as intended
+
+- Chrome (mobile)
+  - Script works as intended
+
+- Microsoft edge (mobile)
+  - Script works as intended
+
+
+# Validator Testing
+I used CI Python Linter for validation checks;
+
+<div align="center"><img src="assets/readme/" alt="An image of CI Python Linter validation check"></div>
+
+<https://pep8ci.herokuapp.com/#>
+
+
+# Bugs
+I've been lucky and not encountered many bugs whilst making this project
+I did get one where it turned my scipt into 'null'. I've no idea as to why it did but I reloaded my old script, lost some code but continued fine
+
+
+<div align="center"><img src="assets/readme/nullbug.jpg"></div>
+
+
+# Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here - <https://github.com/Jordan-Finlay/Wedding-Checker>
+
+
+## Local deployment
+
+- I've downloaded a copy of my wedding checker script onto my computer and am able to access it through local deployment to change and mess around with the overall code and layout/structure for better user experience.
+
+
+<div align="center"><img src="assets/readme/localdeploy.jpg"></div>
+
+
+# Credits
+
+__Content__
+
+- I used colorama for colours - https://pypi.org/project/colorama/
+- Other than that, everything is backend and I've not used any third parties for any logos/design/pictures etc

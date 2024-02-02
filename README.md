@@ -1,32 +1,18 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<div align="center"><img src="assets/readme/logo.jpg" alt="An image of my logo"></div>
 
-Welcome,
+<div align="center"><img src="" alt="A picture of my backend python on multiple screen devices"></div>
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
 
-## Reminders
+# UX
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+I've created a backend python script that is a pretend wedding check in.
+This backend script could be used in multiple other scenarios.
+In this certain circumstance I created it as for a wedding check in function.
+In short, when the user arrives at the wedding they check in their name, what drink they'd like, what main dish they'd like (also with vegan or non vegan options) it then gives an option of a second drink before/with dessert and what your dessert pick is. Before the end it has an option to request a song and finally ending with a results function that shows the user every item they have picked for the wedding.
 
-## Creating the Heroku app
+After all functions there's a validation check to insure the user response is correct.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+I originally was going to create a restaurant idea with similar functions that would check the customer in whilst taking their drinks and food order. It was my girlfriends idea for a wedding design as it maybe more fun than a basic restaurant idea, thanks Jo!
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+<div align="center"><img src="assets/readme/wholescreenjpg" alt="An image of my full script"></div>

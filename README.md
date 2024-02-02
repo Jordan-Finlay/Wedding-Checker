@@ -18,6 +18,15 @@ I originally was going to create a restaurant idea with similar functions that w
 <div align="center"><img src="assets/readme/wholescreen.jpg" alt="An image of my full script"></div>
 
 
+# Flowchart
+
+I created a flowchart before anything to make some easy steps for myself as to how I'd like the project to look and run.
+I added some small changes as I created my script where I thought necessary
+
+<div align="center"><img src="assets/readme/flowchart.jpg" alt="An image of my flowchart"></div>
+<br />
+
+
 # Features
 
 __Existing Features__
@@ -30,7 +39,9 @@ __Existing Features__
 	- A dessert menu (again vegan or non vegan)
 	- A song choice
 	- A results print of all options picked
-	- Validation checks after every function
+
+- There are Validation checks after every function to ensure names inputted can't be made with numbers or too short (such as a single letter)
+  - Other validation checks are to ensure users are picking correct numbers from the lists they are given and if they pick anything else the function will restart
 
 
 <div align="center"><img src="assets/readme/namecheck.jpg" alt="An image of the name check"></div>
@@ -89,7 +100,7 @@ The website is fully adaptable to all devices and screen sizes.
 # Validator Testing
 I used CI Python Linter for validation checks: <https://pep8ci.herokuapp.com/#>
 
-<div align="center"><img src="assets/readme/" alt="An image of CI Python Linter validation check"></div>
+<div align="center"><img src="assets/readme/cipython" alt="An image of CI Python Linter validation check"></div>
 
 
 # Bugs

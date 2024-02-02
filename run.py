@@ -36,9 +36,11 @@ def enter_name():
                          + Style.RESET_ALL)  # Checks first name
         last_str = input(Fore.GREEN + "Please enter your last name here;\n"
                          + Style.RESET_ALL)  # Checks second name
-
-        if validate_name(name_str, last_str):  # If both checks are fine - continue
-            print(Fore.GREEN + f"Welcome to the wedding'{name_str} {last_str}'")  # Strings first and last name together
+        # If both checks are fine - continue
+        if validate_name(name_str, last_str):
+            # Strings first and last name T
+            print(
+                Fore.GREEN + f"Welcome to the wedding'{name_str} {last_str}'")
             print("We hope you have a fantastic time!\n" + Style.RESET_ALL)
             break
 
@@ -92,17 +94,19 @@ def order_drink(drinks_number):
                                   + Style.RESET_ALL)
             drinks_number = int(drinks_number)
             if type(drinks_number) == int:
-                if drinks_number >= 10:  # Checks the user can't pick outside the list
+                # Checks the user can't pick outside the list
+                if drinks_number >= 10:
                     print(Fore.RED + f"You picked: '{drinks_number}'.")
                     print("Sorry that number isn't on the list.")
                     print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
                     print(Fore.BLUE +
-                          f"You chose '{drinks[drinks_number]}'. Great choice!\n"
+                          f"You chose '{drinks[drinks_number]}'\n"
                           + Style.RESET_ALL)
                     user_choices.append(drinks[drinks_number])
-                    for item in user_choices:  # Returns the user choice to global
+                    # Returns the user choice to global
+                    for item in user_choices:
                         break
         except ValueError:
             print(Fore.RED + f"You typed: '{drinks_number}'.")
@@ -131,7 +135,7 @@ def order_food():
             break
         else:
             # Fails check if anything other than y or n is picked
-            print(Fore.RED + f"you picked '{vegan}'.")  # Fails check if anything other than y or n is picked
+            print(Fore.RED + f"you picked '{vegan}'.")
             print("please pick 'y' or 'n'.\n" + Style.RESET_ALL)
             continue
         break
@@ -153,16 +157,19 @@ def vegan_food():
                                  + Style.RESET_ALL)
             vegan_number = int(vegan_number)
             if type(vegan_number) == int:
-                if vegan_number >= 5:  # Checks the user can't pick outside the list
+                # Checks the user can't pick outside the list
+                if vegan_number >= 5:
                     print(Fore.RED + f"You picked: '{vegan_number}'.")
                     print("Sorry that number isn't on the list.")
                     print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
                     print(Fore.BLUE +
-                          f"You chose '{vegan_dishes[vegan_number]}'. Great choice!\n" + Style.RESET_ALL)
+                          f"You chose '{vegan_dishes[vegan_number]}'."
+                          + Style.RESET_ALL)
                     user_choices.append(vegan_dishes[vegan_number])
-                    for item in user_choices:  # Returns the user choice to global
+                    # Returns the user choice to global
+                    for item in user_choices:
                         break
         except ValueError:
             print(Fore.RED + f"You typed: '{vegan_number}'.")
@@ -190,17 +197,19 @@ def meat_food():
                                 + Style.RESET_ALL)
             meat_number = int(meat_number)
             if type(meat_number) == int:
-                if meat_number >= 5:  # Checks the user can't pick outside the list
+                # Checks the user can't pick outside the list
+                if meat_number >= 5:
                     print(Fore.RED + f"You picked: '{meat_number}'.")
                     print("Sorry that number isn't on the list.")
                     print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
                     print(Fore.BLUE +
-                          f"You chose '{meat_dishes[meat_number]}'. Great choice!\n"
+                          f"You chose '{meat_dishes[meat_number]}'."
                           + Style.RESET_ALL)
                     user_choices.append(meat_dishes[meat_number])
-                    for item in user_choices:  # Returns the user choice to global
+                    # Returns the user choice to global
+                    for item in user_choices:
                         break
         except ValueError:
             print(Fore.RED + f"You typed: '{meat_number}'.")
@@ -229,7 +238,8 @@ def second_round():
         elif second_drink == "n":  # If 'n' continues to desserts
             break
         else:
-            print(Fore.RED + f"you picked '{second_drink}'.")  # Fails check if anything other than y or n is picked
+            # Fails check if anything other than y or n is picked
+            print(Fore.RED + f"you picked '{second_drink}'.")
             print("please pick 'y' or 'n'.\n" + Style.RESET_ALL)
             continue
         break
@@ -251,7 +261,8 @@ def order_dessert():
             milk_dessert()  # Runs a non vegan dessert menu
             break
         else:
-            print(Fore.RED + f"you picked '{vegan}'.")  # Fails check if anything other than y or n is picked
+            # Fails check if anything other than y or n is picked
+            print(Fore.RED + f"you picked '{vegan}'.")
             print("please pick 'y' or 'n'.\n" + Style.RESET_ALL)
             continue
         break
@@ -265,7 +276,8 @@ def milk_dessert():
           + Style.RESET_ALL)
     list_desserts = enumerate(desserts)
 
-    for dessert in list_desserts:  # A loop to generate a non vegan dessert menu
+    # A loop to generate a non vegan dessert menu
+    for dessert in list_desserts:
         print(dessert)
 
     while True:
@@ -274,16 +286,19 @@ def milk_dessert():
                                    + Style.RESET_ALL)
             dessert_number = int(dessert_number)
             if type(dessert_number) == int:
-                if dessert_number >= 3:  # A check so the user can't pick outside the list
+                # A check so the user can't pick outside the list
+                if dessert_number >= 3:
                     print(Fore.RED + f"You picked: '{dessert_number}'.")
                     print("Sorry that number isn't on the list.")
                     print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
                     print(Fore.BLUE +
-                          f"You chose '{desserts[dessert_number]}'. Great choice!\n" + Style.RESET_ALL)
+                          f"You chose '{desserts[dessert_number]}'."
+                          + Style.RESET_ALL)
                     user_choices.append(desserts[dessert_number])
-                    for item in user_choices:  # Returns the user choice to global
+                    # Returns the user choice to global
+                    for item in user_choices:
                         break
         except ValueError:
             print(Fore.RED + f"You typed: '{dessert_number}'.")
@@ -302,7 +317,8 @@ def vegan_dessert():
     print(Fore.BLUE + "Great! Here's our vegan desserts;" + Style.RESET_ALL)
     list_vegan_desserts = enumerate(vegan_desserts)
 
-    for vegan_dessert in list_vegan_desserts:  # A loop to generate a vegan dessert menu
+    # A loop to generate a vegan dessert menu
+    for vegan_dessert in list_vegan_desserts:
         print(vegan_dessert)
 
     while True:
@@ -311,16 +327,19 @@ def vegan_dessert():
                                    + Style.RESET_ALL)
             dessert_number = int(dessert_number)
             if type(dessert_number) == int:
-                if dessert_number >= 3:  # A check so the user can't pick outside the list
+                # A check so the user can't pick outside the list
+                if dessert_number >= 3:
                     print(Fore.RED + f"You picked: '{dessert_number}'.")
                     print("Sorry that number isn't on the list.")
                     print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
                     print(Fore.BLUE +
-                          f"You chose '{vegan_desserts[dessert_number]}'. Great choice!\n" + Style.RESET_ALL)
+                          f"You chose '{vegan_desserts[dessert_number]}'."
+                          + Style.RESET_ALL)
                     user_choices.append(vegan_desserts[dessert_number])
-                    for item in user_choices:  # Returns the user choice to global
+                    # Returns the user choice to global
+                    for item in user_choices:
                         break
         except ValueError:
             print(Fore.RED + f"You typed: '{dessert_number}'.")
@@ -337,7 +356,8 @@ def song_request():
     A function to allow the user to request a song
     """
     print(Fore.BLUE + "Do you have any song requests?")
-    print("Due to our large number of requests we will try our best to play as many as we can" + Style.RESET_ALL)
+    print("Due to our large number of requests")
+    print("we will try our best to play as many as we can" + Style.RESET_ALL)
 
     song = input(Fore.GREEN + "Choose any song you'd like;\n"
                  + Style.RESET_ALL)

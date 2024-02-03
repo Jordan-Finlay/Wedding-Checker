@@ -26,7 +26,7 @@ def enter_name():
     Checks for first and last name
     """
     while True:
-        print(Fore.BLUE + "Welcome to the wedding!")
+        print(Fore.CYAN + "Welcome to the wedding!")
         print("You are using our automated system")
         print("We will check you in whilst taking your drinks and food order")
         print("To start, we will ask for your first, then second name"
@@ -82,7 +82,7 @@ def order_drink(drinks_number):
     An input to ask the user which drink they'd like
     Allowing the user to select from a list
     """
-    print(Fore.BLUE + "Pick what drink you would like" + Style.RESET_ALL)
+    print(Fore.CYAN + "Pick what drink you would like" + Style.RESET_ALL)
     list_drinks = enumerate(drinks)
 
     for drink in list_drinks:  # A loop to generate a list of drinks
@@ -101,7 +101,7 @@ def order_drink(drinks_number):
                     print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
-                    print(Fore.BLUE +
+                    print(Fore.CYAN +
                           f"You chose '{drinks[drinks_number]}'\n"
                           + Style.RESET_ALL)
                     user_choices.append(drinks[drinks_number])
@@ -123,7 +123,7 @@ def order_food():
     An input to ask the user what main they'd like
     It will ask if the user is vegan and will generate a menu accordingly
     """
-    print(Fore.BLUE + "We shall go onto our main menu now")
+    print(Fore.CYAN + "We shall go onto our main menu now")
     print("Would you like to see the vegan menu?" + Style.RESET_ALL)
 
     while True:
@@ -145,7 +145,7 @@ def vegan_food():
     """
     A function for vegan options/menu
     """
-    print(Fore.BLUE + "Great! Here's our vegan options:" + Style.RESET_ALL)
+    print(Fore.CYAN + "Great! Here's our vegan options:" + Style.RESET_ALL)
     list_vegan_dishes = enumerate(vegan_dishes)
 
     for vegan_dish in list_vegan_dishes:  # A loop to generate a vegan menu
@@ -164,7 +164,7 @@ def vegan_food():
                     print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
-                    print(Fore.BLUE +
+                    print(Fore.CYAN +
                           f"You chose '{vegan_dishes[vegan_number]}'."
                           + Style.RESET_ALL)
                     user_choices.append(vegan_dishes[vegan_number])
@@ -185,7 +185,7 @@ def meat_food():
     """
     A function for non vegan options/menu
     """
-    print(Fore.BLUE + "Great! Here's our meat options:" + Style.RESET_ALL)
+    print(Fore.CYAN + "Great! Here's our meat options:" + Style.RESET_ALL)
     list_meat_dishes = enumerate(meat_dishes)
 
     for meat_dish in list_meat_dishes:  # A loop to generate a non vegan menu
@@ -204,7 +204,7 @@ def meat_food():
                     print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
-                    print(Fore.BLUE +
+                    print(Fore.CYAN +
                           f"You chose '{meat_dishes[meat_number]}'."
                           + Style.RESET_ALL)
                     user_choices.append(meat_dishes[meat_number])
@@ -225,7 +225,7 @@ def second_round():
     """
     A function to let the user order a second drink with dessert
     """
-    print(Fore.BLUE + "How about another drink with dessert?")
+    print(Fore.CYAN + "How about another drink with dessert?")
     print("Would you like to see our drinks menu again?")
     print("Press 'y' to see our drinks menu")
     print("or 'n' to move onto the dessert menu" + Style.RESET_ALL)
@@ -250,7 +250,7 @@ def order_dessert():
     A function that allows the user to order a dessert
     Similar to the first function allowing the user to select a vegan option
     """
-    print(Fore.BLUE + "We shall go onto our dessert menu now")
+    print(Fore.CYAN + "We shall go onto our dessert menu now")
     print("Would you like to see the vegan menu?" + Style.RESET_ALL)
 
     while True:
@@ -272,7 +272,7 @@ def milk_dessert():
     """
     A function for non vegan desserts
     """
-    print(Fore.BLUE + "Great! Here's our non vegan desserts;"
+    print(Fore.CYAN + "Great! Here's our non vegan desserts;"
           + Style.RESET_ALL)
     list_desserts = enumerate(desserts)
 
@@ -293,7 +293,7 @@ def milk_dessert():
                     print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
-                    print(Fore.BLUE +
+                    print(Fore.CYAN +
                           f"You chose '{desserts[dessert_number]}'."
                           + Style.RESET_ALL)
                     user_choices.append(desserts[dessert_number])
@@ -314,7 +314,7 @@ def vegan_dessert():
     """
     A function for vegan desserts
     """
-    print(Fore.BLUE + "Great! Here's our vegan desserts;" + Style.RESET_ALL)
+    print(Fore.CYAN + "Great! Here's our vegan desserts;" + Style.RESET_ALL)
     list_vegan_desserts = enumerate(vegan_desserts)
 
     # A loop to generate a vegan dessert menu
@@ -334,7 +334,7 @@ def vegan_dessert():
                     print("Please pick another number.\n" + Style.RESET_ALL)
                     continue
                 else:
-                    print(Fore.BLUE +
+                    print(Fore.CYAN +
                           f"You chose '{vegan_desserts[dessert_number]}'."
                           + Style.RESET_ALL)
                     user_choices.append(vegan_desserts[dessert_number])
@@ -355,14 +355,14 @@ def song_request():
     """
     A function to allow the user to request a song
     """
-    print(Fore.BLUE + "Do you have any song requests?")
+    print(Fore.CYAN + "Do you have any song requests?")
     print("Due to our large number of requests")
     print("we will try our best to play as many as we can" + Style.RESET_ALL)
 
     song = input(Fore.GREEN + "Choose any song you'd like;\n"
                  + Style.RESET_ALL)
 
-    print(Fore.BLUE + f"You have selected '{song}' Great song choice!\n"
+    print(Fore.CYAN + f"You have selected '{song}' Great song choice!\n"
           + Style.RESET_ALL)
 
 
@@ -370,10 +370,10 @@ def results():
     """
     A final review of all the selected options from the user
     """
-    print(Fore.BLUE + "To sum up - you have selected;" + Style.RESET_ALL)
+    print(Fore.CYAN + "To sum up - you have selected;" + Style.RESET_ALL)
     print(Fore.GREEN + "[{0}]".format(', '.join(map(str, user_choices)))
           + Style.RESET_ALL)  # Prints the users picks without the quotes
-    print(Fore.BLUE + "Great choices!")
+    print(Fore.CYAN + "Great choices!")
     print("Go into the wedding hall and enjoy the night!")
     print("We hope you have the best time!")
     print("Thanks for using our automated system!")

@@ -1,6 +1,6 @@
 <div align="center"><img src="assets/readme/logo.jpg" alt="An image of my logo"></div>
 
-<div align="center"><img src="" alt="A picture of my backend python on multiple screen devices"></div>
+<div align="center"><img src="assets/readme/allscreens.jpg" alt="A picture of my backend python on multiple screen devices"></div>
 
 
 # UX
@@ -18,10 +18,12 @@ I originally was going to create a restaurant idea with similar functions that w
 <div align="center"><img src="assets/readme/wholescreen.jpg" alt="An image of my full script"></div>
 
 
+
 # Flowchart
 
-I created a flowchart before anything to make some easy steps for myself as to how I'd like the project to look and run.
-I added some small changes as I created my script where I thought necessary
+- I created a flowchart before anything to make some easy steps for myself as to how I'd like the project to look and run
+- I added some small changes as I created my script where I thought necessary
+- I tried to keep the idea simple but effective. Getting staight to the point and running through the menu quickly and efficiently
 
 <div align="center"><img src="assets/readme/flowchart.jpg" alt="An image of my flowchart"></div>
 <br />
@@ -99,6 +101,7 @@ The website is fully adaptable to all devices and screen sizes.
 
 # Validator Testing
 I used CI Python Linter for validation checks: <https://pep8ci.herokuapp.com/#>
+All checks are passed and is running smoothly
 
 <div align="center"><img src="assets/readme/cipython" alt="An image of CI Python Linter validation check"></div>
 
@@ -123,7 +126,7 @@ The live link can be found here - <https://github.com/Jordan-Finlay/Wedding-Chec
 
 ## Local deployment
 
-- I've downloaded a copy of my wedding checker script onto my computer and am able to access it through local deployment to change and mess around with the overall code and layout/structure for better user experience.
+- I've downloaded a copy of my wedding checker script onto my computer and am able to access it through local deployment to change and mess around with the overall code and layout/structure for better user experience. I've also installed python that allows me to work on my code as if it was running through code anywhere.
 
 
 <div align="center"><img src="assets/readme/localdeploy.jpg"></div>

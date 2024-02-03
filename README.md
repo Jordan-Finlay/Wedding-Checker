@@ -104,7 +104,7 @@ The website is fully adaptable to all devices and screen sizes.
 I used CI Python Linter for validation checks: <https://pep8ci.herokuapp.com/#>
 All checks are passed and it's running smoothly
 
-<div align="center"><img src="assets/readme/cipython" alt="An image of CI Python Linter validation check"></div>
+<div align="center"><img src="assets/readme/cipython.jpg" alt="An image of CI Python Linter validation check"></div>
 
 
 # Bugs

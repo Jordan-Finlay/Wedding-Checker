@@ -5,14 +5,14 @@
 
 # UX
 
-I've created a backend python script that is a pretend wedding check in.
+I've created a backend python script that is a pretend wedding check-in.
 This backend script could be used in multiple other scenarios.
-In this certain circumstance I created it as for a wedding check in function.
-In short, when the user arrives at the wedding they check in their name, what drink they'd like, what main dish they'd like (also with vegan or non vegan options) it then gives an option of a second drink before/with dessert and what your dessert pick is. Before the end it has an option to request a song and finally ending with a results function that shows the user every item they have picked for the wedding.
+In this certain circumstance I created it for a wedding check-in function.
+In short, when the user arrives at the wedding, they check in with their name, what drink they'd like, what main dish they'd like (also with vegan or non vegan options) it then gives an option of a second drink before/with dessert and what your dessert pick is. Before the end, it has an option to request a song and finally ends with a results function that shows the user every item they have picked for the wedding.
 
-After all functions there's a validation check to insure the user response is correct.
+After each function there's a validation check to ensure the users response is correct.
 
-I originally was going to create a restaurant idea with similar functions that would check the customer in whilst taking their drinks and food order. It was my girlfriends idea for a wedding design as it maybe more fun than a basic restaurant idea, thanks Jo!
+I was originally going to create a restaurant idea with similar functions that would check the customer in whilst taking their drinks and food order. It was my girlfriends idea for a wedding design as it maybe more fun than a basic restaurant idea, thanks Jo!
 
 
 <div align="center"><img src="assets/readme/wholescreen.jpg" alt="An image of my full script"></div>
@@ -42,8 +42,9 @@ __Existing Features__
 	- A song choice
 	- A results print of all options picked
 
-- There are Validation checks after every function to ensure names inputted can't be made with numbers or too short (such as a single letter)
-  - Other validation checks are to ensure users are picking correct numbers from the lists they are given and if they pick anything else the function will restart
+- There are validation checks after every function to ensure names inputted can't be made with numbers or be too short (such as a single letter)
+  - Other validation checks are to ensure users are picking correct numbers from the lists they are given and if they pick anything else the function will restart and provides a message to
+  pick a number from the list
 
 
 <div align="center"><img src="assets/readme/namecheck.jpg" alt="An image of the name check"></div>
@@ -65,16 +66,16 @@ __Existing Features__
 
 # Features Left to Implement
 
-I have a few ideas I would love to add to this project such as;
+I have a few ideas I would love to add to this project such as:
 
 - A random number generator to pick a table number for guests
 - A spreadsheet for data to be sent to and stored
-- On a spreadsheet have the names of all guests and visabily tick them off when they enter their name into the system
+- On a spreadsheet, have the names of all guests and visabily tick them off when they enter their name into the system
 
 
 # Testing
 
-I've tested my Pong game website on multiple browers such as Firefox/Chrome and Microsoft edge. As well as my android phone using "Samsung internet".
+I've tested my Wedding Checker on multiple browers such as Firefox/Chrome and Microsoft edge. As well as my android phone using "Samsung internet".
 To my current knowledge there are no bugs on any device or internet browser - although I'm still yet to test fully on an ipad/tablet.
 The website is fully adaptable to all devices and screen sizes.
 
@@ -101,14 +102,14 @@ The website is fully adaptable to all devices and screen sizes.
 
 # Validator Testing
 I used CI Python Linter for validation checks: <https://pep8ci.herokuapp.com/#>
-All checks are passed and is running smoothly
+All checks are passed and it's running smoothly
 
 <div align="center"><img src="assets/readme/cipython" alt="An image of CI Python Linter validation check"></div>
 
 
 # Bugs
-I've been lucky and not encountered many bugs whilst making this project
-I did get one where it turned my scipt into 'null'. I've no idea as to why it did but I reloaded my old script, lost some code but continued fine
+I've been lucky and not encountered many bugs whilst making this project.
+I did get one where it turned my scipt into 'null'. I've no idea why it did, but I reloaded my old script which resulted in some lost code, but I continued just fine.
 
 
 <div align="center"><img src="assets/readme/nullbug.jpg"></div>
@@ -136,5 +137,5 @@ The live link can be found here - <https://github.com/Jordan-Finlay/Wedding-Chec
 
 __Content__
 
-- I used colorama for colours - https://pypi.org/project/colorama/
+- I used Colorama for colours - https://pypi.org/project/colorama/
 - Other than that, everything is backend and I've not used any third parties for any logos/design/pictures etc
